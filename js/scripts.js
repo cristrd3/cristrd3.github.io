@@ -6,10 +6,9 @@
 //
 // Scripts
 // 
-
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
+   
+   window.addEventListener('DOMContentLoaded', event => {
+    // Función de reducción de la barra de navegación
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
@@ -23,13 +22,14 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    //reducir la barra de navegación
     navbarShrink();
 
-    // Shrink the navbar when page is scrolled
+    // reducir la barra de navegación cuando se desplaza la página
+
     document.addEventListener('scroll', navbarShrink);
 
-    // Activate Bootstrap scrollspy on the main nav element
+    // Active Bootstrap scrollspy en el elemento de navegación principal
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Collapse responsive navbar when toggler is visible
+    // Contraer la barra de navegación receptiva cuando el alternador está visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
