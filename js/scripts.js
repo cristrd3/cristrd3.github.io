@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7ad1adf2d910e1abdd6a40dcc9a02d50060615f2
    window.addEventListener('DOMContentLoaded', event => {
     // Función de reducción de la barra de navegación
     var navbarShrink = function () {
